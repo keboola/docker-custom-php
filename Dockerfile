@@ -1,5 +1,4 @@
 FROM php:7-cli
-MAINTAINER Ondrej Popelka <ondrej.popelka@keboola.com>
 
 RUN apt-get update -q \
   && apt-get install -y \
