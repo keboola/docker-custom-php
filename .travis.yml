@@ -3,7 +3,7 @@ language: bash
 services:
   - docker
 script: 
-  - docker build -t docker-custom-php .
+  - docker build -t keboola/docker-custom-php .
 after_success:
   - docker images
 deploy:
