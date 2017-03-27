@@ -5,9 +5,8 @@ RUN apt-get update -q \
   git \
   unzip 
 
-RUN cd \
-  && curl -sS https://getcomposer.org/installer | php \
-  && ln -s /root/composer.phar /usr/local/bin/composer
+RUN curl -sS https://getcomposer.org/installer | php \
+  && mv composer.phar /usr/local/bin/composer
 
 COPY php.ini /usr/local/etc/php/php.ini
 
